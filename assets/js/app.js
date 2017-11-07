@@ -23,7 +23,7 @@ var tweet = function(){
 //agregando los elementos al newtweet
 		newTweet.appendChild(paragraph);
 //agregando el div a section
-		wall.appendChild(newTweet);c
+		wall.appendChild(newTweet);
 	}
 };
 //agregando evento para el btn
