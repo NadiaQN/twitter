@@ -1,8 +1,8 @@
 
-//funcion para tomar el tweet y crear div en donde estara cada post
+//mi funcion principal que creara los post y deshabilitara el boton
 var tweet = function(){
 //un if para inhabilitar el boton de enviar si no hay caracteres
-	if(document.getElementById('comment').value.length==0 || document.getElementById('comment').value.length>=150){
+	if(document.getElementById('comment').value.length==0 || document.getElementById('comment').value.length>=140){
 		document.getElementById('btn').setAttribute('disabled');
 	}else{
 //primero tomamos el comentario
@@ -27,11 +27,17 @@ var tweet = function(){
 	}
 };
 //agregando evento para el btn
-var addTweet = btn.addEventListener('click', tweet);
+ btn.addEventListener('click', tweet);
 //contador de caracteres
 function count(obj){
 var element = document.getElementById('display');
-element.innerHTML = 150 -obj.value.length;
+element.innerHTML = 140 -obj.value.length;
+//un if para cambiar color segun caracteres
+	if(document.getElementById('comment').value.length >=120 ){
+		element.style.color = 'black';
+	}if(document.getElementById('comment').value.length >=130){
+		element.style.color = 'red';
+	}
 }
 
 

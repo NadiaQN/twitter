@@ -61,7 +61,6 @@ button{
 span{
 	color: #6AD2F3;
 }
-.disable{
-	color: #A4A4A4;
-	background-color: #BDBDBD;
+.red{
+	color: red;
 }
