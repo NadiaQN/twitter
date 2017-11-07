@@ -37,6 +37,7 @@ header{
 	margin: 0.3em;
 	border: none;
 	border-bottom: 2px solid grey;
+	resize: none;
 }
 button{
 	background-color: #6AD2F3;
@@ -60,7 +61,4 @@ button{
 }
 span{
 	color: #6AD2F3;
-}
-.red{
-	color: red;
 }
